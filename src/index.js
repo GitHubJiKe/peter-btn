@@ -6,10 +6,10 @@ export default class extends Component {
   };
 
   render() {
-    const { text, onClick } = this.props;
+    const { text, onClick, style } = this.props;
     const _click = onClick || this.onClick;
     return (
-      <button className="btn" onClick={_click}>
+      <button className="btn" onClick={_click} style={style}>
         {text}
       </button>
     );
